@@ -52,6 +52,11 @@ module.exports = function main (options, cb) {
   // Common middleware
   // app.use(/* ... */)
   app.use(pinoHttp({ logger }))
+  
+  //cors
+  app.use(cors({
+    origin:"*"
+  }))
       
   // Register routes
   // @NOTE: require here because this ensures that even syntax errors
