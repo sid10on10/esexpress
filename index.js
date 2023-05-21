@@ -5,6 +5,7 @@ const path = require('path')
 const ejs = require('ejs')
 const pino = require('pino')
 const pinoHttp = require('pino-http')
+var cors = require('cors');
 
 module.exports = function main (options, cb) {
   // Set default options
